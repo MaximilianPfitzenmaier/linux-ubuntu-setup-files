@@ -82,6 +82,14 @@ install_and_update_arrays "docker-compose"
 echo "installing python3 ..."
 install_and_update_arrays "python3"
 
+# Install pip
+install_and_update_arrays "python3-pip"
+
+#install postgre
+echo "installing postgree ..."
+install_and_update_arrays "postgresql" 
+install_and_update_arrays "postgresql-contrib"
+sudo systemctl start postgresql.service
 
 # Install pgAdmin4
 echo "install pgAdmin4 ... "
@@ -106,6 +114,15 @@ snap install spotify
 # install discord
 echo "installing discord ..."
 snap install discord
+
+
+#install mkcert
+echo "install mkcert"
+wget https://github.com/FiloSottile/mkcert/releases/download/v1.4.3/mkcert-v1.4.3-linux-amd64
+sudo mv mkcert-v1.4.3-linux-amd64 /usr/bin/mkcert
+chmod +x /usr/bin/mkcert
+sudo apt install libnss3-tools
+mkcert -install
 
 # Install Oh-My-Zsh
 echo "installing oh-my-zsh ..."
