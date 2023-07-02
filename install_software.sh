@@ -24,6 +24,15 @@ install_and_update_arrays "wget"
 install_and_update_arrays "ca-certificates" 
 install_and_update_arrays "curl" 
 install_and_update_arrays "gnupg"
+install_and_update_arrays "libatomic1" 
+install_and_update_arrays "libgconf-2-4" 
+install_and_update_arrays "libc++1" 
+install_and_update_arrays "gconf2-common" 
+install_and_update_arrays "libc++abi1" 
+install_and_update_arrays "libreoffice" 
+install_and_update_arrays "libreoffice-l10n-de"
+install_and_update_arrays "libreoffice-help-de" 
+
 
 # Install Git
 echo "installing git ..."
@@ -73,9 +82,30 @@ install_and_update_arrays "docker-compose"
 echo "installing python3 ..."
 install_and_update_arrays "python3"
 
+
+# Install pgAdmin4
+echo "install pgAdmin4 ... "
+curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /usr/share/keyrings/packages-pgadmin-org.gpg
+sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+
+install_and_update_arrays "pgadmin4"
+
 # Install Powerline fonts
 echo "installing powerfonts for oh-my-zsh"
 install_and_update_arrays "fonts-powerline"
+
+# Install VLC Player
+echo "installing vlc player ..."
+install_and_update_arrays "vlc"
+
+
+# install spotify
+echo "installing spotify ... "
+snap install spotify
+
+# install discord
+echo "installing discord ..."
+snap install discord
 
 # Install Oh-My-Zsh
 echo "installing oh-my-zsh ..."
