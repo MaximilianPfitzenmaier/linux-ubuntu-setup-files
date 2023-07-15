@@ -100,7 +100,9 @@ install_and_update_arrays "pgadmin4"
 
 # Install Powerline fonts
 echo "installing powerfonts for oh-my-zsh"
-install_and_update_arrays "fonts-powerline"
+git clone https://github.com/abertsch/Menlo-for-Powerline.git
+sudo mv Menlo-for-Powerline/Menlo*.ttf /usr/share/fonts
+
 
 # Install VLC Player
 echo "installing vlc player ..."
