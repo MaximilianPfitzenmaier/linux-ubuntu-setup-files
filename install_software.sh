@@ -101,11 +101,14 @@ sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] h
 
 install_and_update_arrays "pgadmin4"
 
+# install Powerline Fonts
+echo "installing powerfonts for oh-my-zsh"
+install_and_update_arrays "fonts-powerline" 
+
 # Install Powerline fonts
 echo "installing powerfonts for oh-my-zsh"
 git clone https://github.com/abertsch/Menlo-for-Powerline.git
 sudo mv Menlo-for-Powerline/Menlo*.ttf /usr/share/fonts
-
 
 # Install VLC Player
 echo "installing vlc player ..."
