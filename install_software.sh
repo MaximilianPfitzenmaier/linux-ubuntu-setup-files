@@ -126,12 +126,6 @@ chmod +x /usr/bin/mkcert
 sudo apt install libnss3-tools
 mkcert -install
 
-# Install Oh-My-Zsh
-echo "installing oh-my-zsh ..."
-sudo apt install -y zsh
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-install_and_update_arrays "Oh-My-Zsh"
-
 echo "Software installation complete!"
 
 # Print the successful array
@@ -147,4 +141,12 @@ for software in "${failed[@]}"
 do
     echo $software
 done
+
+# Install Oh-My-Zsh
+echo "installing oh-my-zsh ..."
+sudo apt install -y zsh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+install_and_update_arrays "Oh-My-Zsh"
+
+
 
