@@ -3,7 +3,7 @@
 # Prompt the user  get email
 echo "Please enter your email to setup ssh-key:"
 read email
-ssh-keygen -t ed25519 -C ${email}
+ssh-keygen -t ed25519 -C "${email}"
 
 
 # Prompt the user for Git user name
