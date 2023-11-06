@@ -80,6 +80,7 @@ sudo mkdir -p ~/.docker/cli-plugins/
 curl -SL https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
 sudo chmod +x ~/.docker/cli-plugins/docker-compose
 install_and_update_arrays "docker-compose"
+sudo usermod -aG docker $USER
 
 # Install Python
 echo "installing python3 ..."
