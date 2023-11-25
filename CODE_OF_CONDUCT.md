@@ -34,5 +34,5 @@ or permanently any contributor for other behaviors that they deem inappropriate,
 
 ## Contact
 If you feel uncomfortable or believe that someone has violated the code of conduct, p
-lease contact us at [your_email](mailto:your_email). 
+lease contact us at [max.pfitzenmaier@googlemail.com](mailto:max.pfitzenmaier@googlemail.com). 
 We will thoroughly investigate the incident and aim for the best possible outcome.
