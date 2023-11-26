@@ -34,10 +34,6 @@ install_and_update_arrays "libreoffice-l10n-de"
 install_and_update_arrays "libreoffice-help-de" 
 
 
-# Install Git
-echo "installing git ..."
-install_and_update_arrays "git"
-
 # Install Node.js and npm
 echo "installing node ..."
 install_and_update_arrays "nodejs"

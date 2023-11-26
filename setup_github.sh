@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Update the system
+echo "installing git ..."
+sudo apt install git -y
+
 # Prompt the user  get email
 echo "Please enter your email to setup ssh-key:"
 read email
